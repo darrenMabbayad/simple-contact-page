@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet"> 
+    <title>company.name</title>
+</head>
+<body>
+
+    <div class="video-container">
+        <video id="video-bg" src="footage.mp4" poster="poster.jpg" autoplay muted loop></video>
+    </div>
+
+    <div class="info-container">
+        <div class="flex-container">
+            <img class="logo" src="" alt="company logo">
+            <h1 class="company-name">Company Name</h1>
+            <h3 class="phone-number">(347) 555 5555</h3>
+            <a class="email" href="mailto:user@company.com">user@company.com</a>
+            <div class="email-underline"></div>
+        </div>
+    </div>    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+
+    <script>
+
+        const email = document.querySelector('.email')
+        const emailUnderline = document.querySelector('.email-underline')
+
+        email.addEventListener('mouseenter', event => {
+            gsap.to(emailUnderline, {width: '55%', duration: 0.3})
+        })
+        email.addEventListener('mouseleave', event => {
+            gsap.to(emailUnderline, {width: 0, duration: 0.3})
+        })
+
+    </script>
+
+</body>
+</html>
