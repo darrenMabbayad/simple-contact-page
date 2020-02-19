@@ -51,31 +51,27 @@ a:hover {
           align-items: center;
 }
 
-.logo {
-  background: white;
-  opacity: 0.3;
-  height: 150px;
-  width: 350px;
-  border: solid white 1px;
-}
-
 .company-name {
   font-weight: 400;
   letter-spacing: 3px;
   margin: 1rem auto;
   color: white;
+  text-align: center;
 }
 
-.phone-number, .email {
+.byline, .email {
   font-weight: 300;
-  margin-bottom: 0.5em;
+  margin-bottom: 1rem;
   color: white;
+  text-align: center;
+}
+
+.byline {
+  width: 70%;
 }
 
 .email {
-  font-weight: 300;
   margin-bottom: 0.2em;
-  color: white;
 }
 
 .email-underline {
@@ -87,7 +83,7 @@ a:hover {
 
 @media screen and (max-width: 600px) {
   .info-container {
-    width: 95%;
+    width: 90%;
   }
   .company-name {
     font-size: 1.75rem;
